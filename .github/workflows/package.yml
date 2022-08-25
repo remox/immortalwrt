@@ -13,3 +13,4 @@ jobs:
       - name: pack_install
         run: |
           ./scripts/feeds update -a && ./scripts/feeds install -a
+          make
