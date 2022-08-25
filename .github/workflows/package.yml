@@ -3,7 +3,9 @@ on: workflow_dispatch
 jobs:
   Package:
     name: pack
-    runs-on: immortalwrt/opde:base
+    runs-on: ubuntu-latest
+    container:
+      image: immortalwrt/opde:base
     steps:
       - name: Checkout
         uses: actions/checkout@openwrt-21.02
