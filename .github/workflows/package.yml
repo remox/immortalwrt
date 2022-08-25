@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: immortalwrt/opde:base
+      options: --user 1001
     steps:
       - name: Checkout
         uses: actions/checkout@v3
