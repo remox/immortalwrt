@@ -1,0 +1,9 @@
+name: Package
+
+jobs:
+  Package:
+    name: pack
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+      uses: actions/checkout@
